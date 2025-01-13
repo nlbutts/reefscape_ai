@@ -55,7 +55,6 @@ def convert_labelme_to_yolo(labelme_json_dir, output_dir, category_mapping, trai
                 label = shape['label']
 
                 print(label)
-                print(category_mapping)
                 if label not in category_mapping:
                     continue
 
@@ -84,14 +83,15 @@ def main():
     parser.add_argument('labelme_json_dir', type=str, help="Directory containing LabelMe JSON files.")
     parser.add_argument('output_dir', type=str, help="Output directory for YOLO formatted data.")
     parser.add_argument('--train_ratio', type=float, default=0.8, help="Ratio of training data (default: 0.8)")
-    parser.add_argument('--category_mapping', type=str, required=True, help="Path to JSON file with category mapping.")
+    parser.add_argument('--labels', type=str, required=True, help="Path to JSON file with category mapping.")
 
     args = parser.parse_args()
 
     # Load category mapping
-    with open(args.category_mapping, 'r') as f:
+    with open(args.labels, 'r') as f:
         category_mapping = json.load(f)
 
+    print(category_mapping)
     convert_labelme_to_yolo(args.labelme_json_dir, args.output_dir, category_mapping, args.train_ratio)
 
 if __name__ == "__main__":

@@ -6,6 +6,5 @@ test: # test images (optional)
 
 # Classes
 names:
-  0: unknown
-  1: ball
-  2: coral
+  0: ball
+  1: coral
