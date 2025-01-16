@@ -24,3 +24,12 @@ pip install ultralytics
 This will export directory called **best_imx_model** in the **runs/detect/trainX/weights** directory.
 
 SCP this folder to a Pi and then run TBD to generate a packed model.
+
+# Run on target
+There is an example python file to run models:
+https://github.com/raspberrypi/picamera2/blob/main/examples/imx500/imx500_object_detection_demo.py
+
+To run on target use the following:
+`python3 imx500_object_detection_demo.py --model reefscape.rpk --threshold 0.2 --bbox-normalization --bbox-order=xy --fps=30 --labels=labels.txt`
+
+
