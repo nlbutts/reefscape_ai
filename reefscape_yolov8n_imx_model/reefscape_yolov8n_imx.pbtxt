@@ -1223,7 +1223,7 @@ layer {
     scale_param {
     "InputShapes": "16x160x160, 16x16x3x3, 16"
     "OutputShape": "16x160x160"
-    "Quantize[mn,mx]": [-32.0, 32.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 16
     "ConstInputs": "/model/model_2_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_2_m_0_cv2_conv.layer.bias.uid6:0"
@@ -1253,7 +1253,7 @@ layer {
     scale_param {
     "InputShapes": "16x160x160"
     "OutputShape": "16x160x160"
-    "Quantize[mn,mx]": [-32.0, 32.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_2_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_2_m_0_cv2_conv.layer.bias.uid6:0"
@@ -1270,7 +1270,7 @@ layer {
     scale_param {
     "InputShapes": "16x160x160"
     "OutputShape": "16x160x160"
-    "Quantize[mn,mx]": [-32.0, 32.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "400.00KB"
@@ -1794,7 +1794,7 @@ layer {
     scale_param {
     "InputShapes": "32x80x80"
     "OutputShape": "32x80x80"
-    "Quantize[mn,mx]": [-2.0, 2.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_4_m_1_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_4_m_1_cv1_conv.layer.bias.uid12:0"
@@ -2054,7 +2054,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_6_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_6_cv1_conv.layer.bias.uid16:0"
@@ -2071,7 +2071,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "320.00KB"
@@ -2088,7 +2088,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "320.00KB"
@@ -2105,7 +2105,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -2122,7 +2122,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -2139,7 +2139,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -2156,7 +2156,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -2173,7 +2173,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -2190,7 +2190,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -2284,7 +2284,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_6_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_6_m_0_cv2_conv.layer.bias.uid18:0"
@@ -2428,8 +2428,8 @@ layer {
   type: "Concat"
   bottom: "/model/Add_4:0"
   bottom: "transform-51-/model/Split_2sts0:0"
-  bottom: "/model/Add_3:0"
   bottom: "transform-52-/model/Split_2sts1:0"
+  bottom: "/model/Add_3:0"
   top: "/model/Concat_2:0"
     scale_param {
     "InputShapes": "64x40x40, 64x40x40, 64x40x40, 64x40x40"
@@ -2528,7 +2528,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_7_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_7_conv.layer.bias.uid22:0"
@@ -2758,7 +2758,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_8_m_0_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_8_m_0_cv1_conv.layer.bias.uid24:0"
@@ -2775,7 +2775,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20, 128x128x3x3, 128"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 16
     "ConstInputs": "/model/model_8_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_8_m_0_cv2_conv.layer.bias.uid25:0"
@@ -2805,7 +2805,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_8_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_8_m_0_cv2_conv.layer.bias.uid25:0"
@@ -2889,7 +2889,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_8_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_8_cv2_conv.layer.bias.uid26:0"
@@ -3137,7 +3137,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_12_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_12_cv1_conv.layer.bias.uid29:0"
@@ -3154,7 +3154,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "320.00KB"
@@ -3171,7 +3171,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "128x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "320.00KB"
@@ -3188,7 +3188,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -3205,7 +3205,7 @@ layer {
     scale_param {
     "InputShapes": "128x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -3222,7 +3222,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -3239,7 +3239,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -3256,7 +3256,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "100.00KB"
@@ -3350,7 +3350,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_12_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_12_m_0_cv2_conv.layer.bias.uid31:0"
@@ -3362,14 +3362,14 @@ layer {
 layer {
   name: "Concat: /model/Concat_6"
   type: "Concat"
-  bottom: "transform-56-/model/Split_4sts1:0"
   bottom: "/model/model_0_act_29/Mul_smr:0"
   bottom: "transform-55-/model/Split_4sts0:0"
+  bottom: "transform-56-/model/Split_4sts1:0"
   top: "/model/Concat_6:0"
     scale_param {
     "InputShapes": "64x40x40, 64x40x40, 64x40x40"
     "OutputShape": "192x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "300.00KB"
@@ -4373,7 +4373,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-2.0, 2.0]
+    "Quantize[mn,mx]": [-4.0, 4.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_18_m_0_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_18_m_0_cv1_conv.layer.bias.uid45:0"
@@ -4438,7 +4438,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_18_m_0_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_18_m_0_cv2_conv.layer.bias.uid46:0"
@@ -4474,7 +4474,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40, 64x40x40, 64x40x40"
     "OutputShape": "192x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "300.00KB"
@@ -4774,7 +4774,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40"
     "OutputShape": "64x40x40"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_22_cv3_1_1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv3_1_1_conv.layer.bias.uid52:0"
@@ -4821,7 +4821,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_21_cv1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_21_cv1_conv.layer.bias.uid53:0"
@@ -4868,7 +4868,7 @@ layer {
     scale_param {
     "InputShapes": "64x40x40, 2x64x1x1, 2"
     "OutputShape": "2x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_22_cv3_1_2/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv3_1_2.layer.bias.uid55:0"
@@ -4898,7 +4898,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -4915,7 +4915,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "160.00KB"
@@ -4932,7 +4932,7 @@ layer {
     scale_param {
     "InputShapes": "2x40x40"
     "OutputShape": "2x40x40"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "50.00KB"
@@ -4949,7 +4949,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "80.00KB"
@@ -4966,7 +4966,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "80.00KB"
@@ -5001,7 +5001,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "50.00KB"
@@ -5018,7 +5018,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "50.00KB"
@@ -5035,7 +5035,7 @@ layer {
     scale_param {
     "InputShapes": "128x20x20"
     "OutputShape": "128x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "50.00KB"
@@ -5247,7 +5247,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20"
     "OutputShape": "256x20x20"
-    "Quantize[mn,mx]": [-4.0, 4.0]
+    "Quantize[mn,mx]": [-8.0, 8.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_21_cv2_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_21_cv2_conv.layer.bias.uid58:0"
@@ -5264,7 +5264,7 @@ layer {
     scale_param {
     "InputShapes": "256x20x20, 64x256x3x3, 64"
     "OutputShape": "64x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 16
     "ConstInputs": "/model/model_22_cv2_2_0_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv2_2_0_conv.layer.bias.uid59:0"
@@ -5294,7 +5294,7 @@ layer {
     scale_param {
     "InputShapes": "64x20x20"
     "OutputShape": "64x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_22_cv2_2_0_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv2_2_0_conv.layer.bias.uid59:0"
@@ -5358,7 +5358,7 @@ layer {
     scale_param {
     "InputShapes": "64x20x20, 64x64x3x3, 64"
     "OutputShape": "64x20x20"
-    "Quantize[mn,mx]": [-16.0, 16.0]
+    "Quantize[mn,mx]": [-32.0, 32.0]
     "QuantizeBits": 16
     "ConstInputs": "/model/model_22_cv2_2_1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv2_2_1_conv.layer.bias.uid61:0"
@@ -5388,7 +5388,7 @@ layer {
     scale_param {
     "InputShapes": "64x20x20"
     "OutputShape": "64x20x20"
-    "Quantize[mn,mx]": [-16.0, 16.0]
+    "Quantize[mn,mx]": [-32.0, 32.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_22_cv2_2_1_conv/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv2_2_1_conv.layer.bias.uid61:0"
@@ -5482,7 +5482,7 @@ layer {
     scale_param {
     "InputShapes": "64x20x20, 2x64x1x1, 2"
     "OutputShape": "2x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     "ConstInputs": "/model/model_22_cv3_2_2/WeightsSymmetricQuantizer:0"
     "ConstInputs": "Variable.model.model_22_cv3_2_2.layer.bias.uid64:0"
@@ -5512,7 +5512,7 @@ layer {
     scale_param {
     "InputShapes": "2x20x20"
     "OutputShape": "2x20x20"
-    "Quantize[mn,mx]": [-8.0, 8.0]
+    "Quantize[mn,mx]": [-16.0, 16.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "12.50KB"
@@ -5889,7 +5889,7 @@ layer {
     scale_param {
     "InputShapes": "4x8400, 1x8400"
     "OutputShape": "4x8400"
-    "Quantize[mn,mx]": [0, 256.0]
+    "Quantize[mn,mx]": [0, 512.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "32.88KB"
@@ -5906,7 +5906,7 @@ layer {
     scale_param {
     "InputShapes": "4x8400"
     "OutputShape": "2x8400"
-    "Quantize[mn,mx]": [0, 256.0]
+    "Quantize[mn,mx]": [0, 512.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "16.44KB"
@@ -5923,7 +5923,7 @@ layer {
     scale_param {
     "InputShapes": "4x8400"
     "OutputShape": "2x8400"
-    "Quantize[mn,mx]": [0, 256.0]
+    "Quantize[mn,mx]": [0, 512.0]
     "QuantizeBits": 8
     
     "RuntimeMemory": "16.44KB"
@@ -5953,8 +5953,8 @@ layer {
 layer {
   name: "Sub: /model/Sub"
   type: "Sub"
-  bottom: "transform-65-/model/Constant_12:0"
   bottom: "/model/Slice:0"
+  bottom: "transform-65-/model/Constant_12:0"
   top: "/model/Sub:0"
     scale_param {
     "InputShapes": "2x8400, 2x8400"
@@ -6251,9 +6251,9 @@ layer{
   scale_param {
    
     RuntimeMemoryPhysicalSize: "5.27MB"
-    ModelMemoryPhysicalSize: "2.40MB"
+    ModelMemoryPhysicalSize: "2.41MB"
     ReservedMemory: "1.00KB"
-    MemoryUsage: "7.67MB"
+    MemoryUsage: "7.68MB"
     TotalMemoryAvailableOnChip: "8.00MB"
     MemoryUtilization: "96%"
     FitInChip: "true"

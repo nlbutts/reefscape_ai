@@ -2,9 +2,9 @@
   "Memory Report": {
     "Name": "reefscape_yolov8n_imx",
     "Runtime Memory Physical Size": "5.27MB",
-    "Model Memory Physical Size": "2.40MB",
+    "Model Memory Physical Size": "2.41MB",
     "Reserved Memory": "1.00KB",
-    "Memory Usage": "7.67MB",
+    "Memory Usage": "7.68MB",
     "Total Memory Available On Chip": "8.00MB",
     "Memory Utilization": "96%",
     "Fit In Chip": true,
@@ -14,7 +14,7 @@
         "Hash": "reefscape_yolov8n_imx",
         "Name": "reefscape_yolov8n_imx",
         "Runtime Memory Physical Size": "5.27MB",
-        "Model Memory Physical Size": "2.40MB",
+        "Model Memory Physical Size": "2.41MB",
         "Input Persistence Cost": "0B"
       }
     ]
