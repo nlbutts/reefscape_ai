@@ -1,20 +1,20 @@
 {
   "Memory Report": {
     "Name": "reefscape_yolov8n_imx",
-    "Runtime Memory Physical Size": "5.27MB",
-    "Model Memory Physical Size": "2.41MB",
+    "Runtime Memory Physical Size": "1.43MB",
+    "Model Memory Physical Size": "2.38MB",
     "Reserved Memory": "1.00KB",
-    "Memory Usage": "7.68MB",
+    "Memory Usage": "3.81MB",
     "Total Memory Available On Chip": "8.00MB",
-    "Memory Utilization": "96%",
+    "Memory Utilization": "48%",
     "Fit In Chip": true,
     "Input Persistent": false,
     "Networks": [
       {
         "Hash": "reefscape_yolov8n_imx",
         "Name": "reefscape_yolov8n_imx",
-        "Runtime Memory Physical Size": "5.27MB",
-        "Model Memory Physical Size": "2.41MB",
+        "Runtime Memory Physical Size": "1.43MB",
+        "Model Memory Physical Size": "2.38MB",
         "Input Persistence Cost": "0B"
       }
     ]
